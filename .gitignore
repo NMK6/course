@@ -3,4 +3,4 @@
 /temp/*
 **/*.temp
 **/.DS_Store
-/node/
+/node_modules/
