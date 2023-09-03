@@ -1,17 +1,35 @@
 body {
-    padding: 20px 10px;
-
+  padding: 20px 10px;
+}
+h1,
+h2,
+span {
+  font-family: Helvetica;
+  font-weight: bold;
 }
 h1 {
-    font-family: Helvetica;
-    font-size: 100px;
-    font-weight: bold;
-    color: khaki;
-    text-align: center;
-    padding: 20px;
-    background-image: image-set(
-        url('./img/pattern.webp') type('image/webp'),
-        url('./img/pattern.jpg') type('image/jpeg')
-    );
-    
+  font-size: 100px;
+
+  color: khaki;
+  text-align: center;
+  padding: 20px;
+  background-image: image-set(
+    url("./img/pattern.webp") type("image/webp"),
+    url("./img/pattern.jpg") type("image/jpeg")
+  );
+}
+
+h2 {
+  color: white;
+  font-size: 32px;
+  background-color: mediumspringgreen;
+}
+h2:nth-of-type(2) {
+  background-color: lightcoral;
+}
+h2:nth-last-of-type(3) {
+  background-color: skyblue;
+}
+span {
+  color: blue;
 }
