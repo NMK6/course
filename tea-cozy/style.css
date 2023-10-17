@@ -1,4 +1,36 @@
 body {
   font-size: 22px;
   font-family: "Helvetice";
+  background-color: black;
+  color: seashell;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  color: seashell;
+}
+header {
+  padding: 10px;
+  width: 100vw;
+  padding-bottom: 9px;
+  height: 69px;
+  border-bottom: solid 1px seashell;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  width: 30vw;
+  margin-right: 10px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0;
+}
+.main {
+  height: 700px;
 }
