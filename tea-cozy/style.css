@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 22px;
   font-family: "Helvetice";
@@ -5,10 +8,14 @@ body {
   color: seashell;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  opacity: 0.9;
 }
 a {
   color: seashell;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 header {
   padding: 10px;
@@ -20,6 +27,11 @@ header {
   display: flex;
   justify-content: space-between;
 }
+.logo {
+  height: 50px;
+  width: 157.14px;
+  position: relative;
+}
 header nav {
   width: 30vw;
   margin-right: 10px;
@@ -28,7 +40,10 @@ header ul {
   list-style: none;
   display: flex;
   width: 100%;
+  height: 100%;
+  align-items: center;
   justify-content: space-around;
+  margin: 0;
   padding: 0;
 }
 .main {
