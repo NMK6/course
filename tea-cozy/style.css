@@ -17,26 +17,29 @@ img {
   width: 100%;
   height: auto;
 }
-header {
+.nav {
   padding: 10px;
   width: 100vw;
   padding-bottom: 9px;
   height: 69px;
   border-bottom: solid 1px seashell;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
+  background-color: black;
 }
 .logo {
   height: 50px;
   width: 157.14px;
   position: relative;
 }
-header nav {
+.nav nav {
   width: 30vw;
   margin-right: 10px;
 }
-header ul {
+.nav ul {
   list-style: none;
   display: flex;
   width: 100%;
@@ -48,4 +51,31 @@ header ul {
 }
 .main {
   height: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 69px;
+  position: relative;
+}
+.main > picture {
+  height: 700px;
+  width: 1200px;
+  display: block;
+}
+.main > header {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main h2,
+.main h4 {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 30px;
 }
