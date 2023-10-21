@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+html,
+body {
+  opacity: 0.9;
+}
 body {
   font-size: 22px;
   font-family: "Helvetice";
@@ -9,7 +12,6 @@ body {
   color: seashell;
   padding: 0;
   margin: 0;
-  opacity: 0.9;
 }
 h2,
 h3,
@@ -74,16 +76,28 @@ section {
   align-items: center;
   justify-content: center;
 }
+.nav li {
+  opacity: 0.9;
+}
+.nav li:hover {
+  opacity: 1;
+}
 section:last-of-type {
   margin-bottom: 0;
 }
 .main {
   min-height: 700px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
-.main > picture {
-  height: auto;
-  display: block;
+.main img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .main > header {
   position: absolute;
@@ -120,10 +134,54 @@ section:last-of-type {
   margin-bottom: 15px;
 }
 .location {
-  min-height: 500px;
   height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
 }
-.location > picture {
-  height: auto;
-  display: block;
+.location__info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.location img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.location__cards {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.location__card {
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  justify-content: space-between;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.9;
+}
+.location__card h4 {
+  margin-bottom: 20px;
+}
+.location__card:hover {
+  opacity: 1;
 }
