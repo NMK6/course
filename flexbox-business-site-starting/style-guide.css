@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #f3f3f3;
+  padding: 5rem;
+  color: #040472;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.heading-1,
+h1 {
+  font-family: "Syncopate", sans-serif;
+  line-height: 2;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.heading-2,
+.heading-3,
+.heading-4,
+h2,
+h3,
+h4 {
+  font-family: "Syncopate", sans-serif;
+  line-height: 1.6;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.heading-3,
+.heading-4,
+h3,
+h4 {
+  font-size: 1.5rem;
+}
+.heading-5,
+.heading-6,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+section {
+  margin-bottom: 4rem;
+}
+.colours,
+.elements {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px #040472;
+  margin: 2rem 0;
+}
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.headings {
+  padding: 2rem;
+  box-shadow: 1px 1px 5px #040472;
+  margin: 2rem 0;
+}
+.colour {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  flex-wrap: wrap;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+}
+.colour__container {
+  height: 2rem;
+  width: 6rem;
+  background-color: #f3f3f3;
+  box-shadow: 1px 1px 5px #040472;
+}
+.colour__container--white {
+  background-color: #040472;
+}
+.colour__container--green {
+  background-color: #008000;
+}
+.colour__container--pink {
+  background-color: #b92840;
+}
+.button {
+  padding: 1rem 1.6rem;
+  background-color: #b92840;
+  box-shadow: 1px 1px 10px #040472;
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  max-width: 12rem;
+}
+.button:hover {
+  box-shadow: inset 2px 2px 4px 0 rgba(4, 4, 114, 0.2);
+  transition: box-shadow 0.3s;
+}
+.button--hover {
+  box-shadow: inset 2px 2px 4px 0 rgba(4, 4, 114, 0.2);
+  transition: box-shadow 0.3s;
+}
