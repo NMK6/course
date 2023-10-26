@@ -9,7 +9,7 @@ html {
 body {
   background-color: #f3f3f3;
   padding: 5rem;
-  color: #040472;
+  color: #0f1c3e;
 }
 
 h1,
@@ -63,7 +63,7 @@ p {
   font-size: 1.2rem;
   line-height: 1.2;
 }
-section {
+.section {
   margin-bottom: 4rem;
 }
 .colours,
@@ -71,7 +71,7 @@ section {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  box-shadow: 1px 1px 5px #040472;
+  box-shadow: 1px 1px 5px #0f1c3e;
   margin: 2rem 0;
 }
 .images {
@@ -83,7 +83,7 @@ section {
 }
 .headings {
   padding: 2rem;
-  box-shadow: 1px 1px 5px #040472;
+  box-shadow: 1px 1px 5px #0f1c3e;
   margin: 2rem 0;
 }
 .colour {
@@ -100,21 +100,21 @@ section {
   height: 2rem;
   width: 6rem;
   background-color: #f3f3f3;
-  box-shadow: 1px 1px 5px #040472;
+  box-shadow: 1px 1px 5px #0f1c3e;
 }
 .colour__container--white {
-  background-color: #040472;
+  background-color: #0f1c3e;
 }
 .colour__container--green {
-  background-color: #008000;
+  background-color: #029d02;
 }
 .colour__container--pink {
-  background-color: #b92840;
+  background-color: #e33d41;
 }
 .button {
   padding: 1rem 1.6rem;
-  background-color: #b92840;
-  box-shadow: 1px 1px 10px #040472;
+  background-color: #e33d41;
+  box-shadow: 1px 1px 10px #0f1c3e;
   color: #f3f3f3;
   font-size: 1.2rem;
   text-transform: uppercase;

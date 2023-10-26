@@ -1,0 +1,233 @@
+:root {
+  --main-color: #f3f3f3;
+  --secondary-color: #0f1c3e;
+  --action-color: #e33d41;
+  --accent-color: #2bda2b;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  padding: 2rem 3rem;
+  background-color: var(--main-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* typography */
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--accent-color);
+  padding: 1.2rem;
+}
+.heading-1 {
+  font-family: "Syncopate", sans-serif;
+  line-height: 2;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.heading-2,
+.heading-3,
+.heading-4 {
+  font-family: "Syncopate", sans-serif;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--main-color);
+}
+.heading-3,
+.heading-4 {
+  font-size: 1.5rem;
+}
+.heading-5,
+.heading-6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+
+/* navigation */
+
+header.section {
+  align-items: center;
+  margin: 0 0 2rem;
+}
+.nav {
+  display: flex;
+}
+.nav__ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+.nav__ul a {
+  background-color: var(--secondary-color);
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 1s ease-in-out;
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav__ul a:hover {
+  color: var(--main-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* about section */
+
+.about,
+.portfolio,
+.team {
+  height: 60vh;
+  min-height: 600px;
+  display: grid;
+  grid-template: repeat(13, 1fr) / repeat(6, 1fr);
+}
+.about__one,
+.about__two,
+.portfolio__two,
+.team__one {
+  background-color: var(--secondary-color);
+  color: #f3f3f3;
+  padding: 2rem 4rem;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.about__one,
+.portfolio__two,
+.team__one {
+  grid-area: 2/1/3/4;
+  display: grid;
+  grid-template: 1fr/ 1fr 8fr;
+  justify-content: left;
+}
+.about__one > img {
+  grid-area: 1/1/2/2;
+}
+.about__one > h2 {
+  grid-area: 1/2/2/3;
+}
+.about__two {
+  grid-area: 4/1/13/4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+/* .about__three {
+  grid-area: 9/1/10/4;
+} */
+
+.about__four {
+  grid-area: 1/2/14/7;
+  overflow: hidden;
+  position: relative;
+}
+
+.about__four::before {
+  content: "";
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: -1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--accent-color);
+}
+
+/* button */
+
+/* .button {
+  padding: 1rem 1.6rem;
+  background-color: var(--accent-color);
+  box-shadow: 1px 1px 10px var(--secondary-color);
+  color: var(--main-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  z-index: 2;
+  margin: 1rem 0;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.button:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+} */
+
+/* portfolio */
+
+.portfolio {
+  grid-template: repeat(8, 1fr) / repeat(6, 1fr);
+}
+.portfolio__one,
+.portfolio__three {
+  object-fit: cover;
+  display: block;
+  object-position: bottom;
+  overflow: hidden;
+}
+.portfolio__one {
+  grid-area: 1/1/9/4;
+}
+.portfolio__two {
+  grid-area: 2/3/3/7;
+}
+
+.portfolio__three {
+  grid-area: 4/4/9/7;
+}
+
+/* team section */
+.team {
+  grid-template: 100px 300px / repeat(3, 1fr);
+  gap: 2rem;
+  height: 20vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+.team__one {
+  grid-area: 1/1/2/4;
+}
+.team_two {
+  grid-area: 2/1/3/2;
+
+  overflow: hidden;
+}
+.team__three {
+  grid-area: 2/2/3/3;
+}
+.team__four {
+  grid-area: 2/3/3/4;
+}
