@@ -15,22 +15,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="section">
+      <div class="logo">
+        <img src="./img/logo2.svg" alt="logo" width="60" />
+      </div>
+      <h1 class="heading-1">New beginning</h1>
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#team">team</a></li>
+        </ul>
+      </nav>
+    </header>
     <article>
-      <header class="section">
-        <div class="logo">
-          <img src="./img/logo2.svg" alt="logo" width="60" />
-        </div>
-        <h1 class="heading-1">New beginning</h1>
-        <nav class="nav">
-          <ul class="nav__ul">
-            <li>
-              <a href="#about">about</a>
-            </li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <li><a href="#team">team</a></li>
-          </ul>
-        </nav>
-      </header>
       <section class="section about" id="about">
         <div class="about__one">
           <img src="./img/about.svg" alt="" width="34" />
@@ -86,10 +86,11 @@
       </section>
       <section class="section team" id="team">
         <div class="team__one">
-          <img src="./img/portfolio.svg" alt="portfolio" width="40" />
+          <img src="./img/team.svg" alt="portfolio" width="40" />
           <h2 class="heading-2">Our team</h2>
         </div>
         <div class="team__two">
+          <h3 class="heading-3 team__heading">Construction Team:</h3>
           <picture>
             <source srcset="./img/image-4.avif" type="image/avif" />
             <source srcset="./img/image-4.webp" type="image/webp" />
@@ -98,6 +99,7 @@
           </picture>
         </div>
         <div class="team__three">
+          <h3 class="heading-3 team__heading">Construction Team:</h3>
           <picture>
             <source srcset="./img/image-5.avif" type="image/avif" />
             <source srcset="./img/image-5.webp" type="image/webp" />
@@ -106,6 +108,7 @@
           </picture>
         </div>
         <div class="team__four">
+          <h3 class="heading-3 team__heading">Construction Team:</h3>
           <picture>
             <source srcset="./img/image-6.avif" type="image/avif" />
             <source srcset="./img/image-6.webp" type="image/webp" />
@@ -114,7 +117,16 @@
           </picture>
         </div>
       </section>
-      <footer class="section"></footer>
     </article>
+    <footer class="section">
+      <div class="contact">
+        <img src="./img/copyright.svg" alt="copyright" width="20" />
+        <p>2023 New Beginning. All rights reserved</p>
+      </div>
+      <div class="contact">
+        <p>contact@new-beginning.com</p>
+        <p>555-867-5309</p>
+      </div>
+    </footer>
   </body>
 </html>
