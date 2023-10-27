@@ -221,6 +221,28 @@ header.section {
   grid-area: 1/1/2/4;
   grid-template: 1fr/ 5% 95%;
 }
+.team__two,
+.team__three,
+.team__four {
+  position: relative;
+}
+.team__heading {
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: 40%;
+  left: 0;
+  padding: 1.5rem;
+  color: var(--main-color);
+  opacity: 0;
+}
+
+.team__two:hover .team__heading,
+.team__three:hover .team__heading,
+.team__four:hover .team__heading {
+  transition: all 1s ease-in-out;
+  transform: translateY(20px);
+  opacity: 1;
+}
 .team_two {
   grid-area: 2/1/3/2;
 
