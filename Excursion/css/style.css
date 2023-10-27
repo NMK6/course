@@ -36,8 +36,15 @@ a {
   text-align: center;
 }
 .phone {
+  min-height: 95vh;
   opacity: 0;
 
   animation: opacityChange 3s ease-in;
   animation-fill-mode: forwards;
+}
+footer {
+  width: 100%;
+}
+footer > p {
+  text-align: right;
 }
