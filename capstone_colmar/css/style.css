@@ -311,7 +311,7 @@ section.second {
   width: 100%;
   height: 25vh;
   padding: 1rem;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .fourth__card:first-child {
   padding-top: 0;
@@ -395,4 +395,25 @@ footer ul {
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
+}
+@media only screen and (max-width: 1390px) {
+  section,
+  .fourth__container,
+  .third__cards {
+    flex-direction: column;
+  }
+  .first__one,
+  .second__one,
+  .second__two,
+  .fourth__one,
+  .fourth__two,
+  .fourth__one,
+  .third__card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .fourth__container {
+    height: auto;
+    max-height: max-content;
+  }
 }
