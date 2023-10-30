@@ -56,6 +56,9 @@ header ul li a {
   gap: 0.5rem;
   align-items: center;
 }
+header .image {
+  display: none;
+}
 h1 {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -415,5 +418,36 @@ footer ul {
   .fourth__container {
     height: auto;
     max-height: max-content;
+  }
+  .third {
+    padding: 2rem 4.5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  header .text {
+    display: none;
+  }
+  header .image {
+    display: inline-block;
+    padding-left: 4rem;
+    height: 32px;
+  }
+  header > nav > ul {
+    gap: 0;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .fourth__card,
+  .card__info,
+  .card {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .fourth__image,
+  .card__image {
+    min-height: 40vh;
+    min-width: 100%;
   }
 }
