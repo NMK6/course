@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #f3f3f3;
+  --secondary-color: #0f1c3e;
+  --accent-color: #ff4500;
+}
+html {
+  font-size: 16px;
+}
+body {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+  overflow: hidden;
+  background-image: url("../img/img9.jpg");
+  background-size: cover;
+  background-position: center top;
+  z-index: -1;
+}
+.about > h2 {
+  font-size: 8rem;
+  color: var(--accent-color);
+  font-family: "Special Elite";
+}
